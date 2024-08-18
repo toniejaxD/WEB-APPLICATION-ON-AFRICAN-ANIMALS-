@@ -1,0 +1,362 @@
+/* Globalne style, których możesz użyć na całej stronie */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url('photo_main_page.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed; /* Stała pozycja tła */
+}
+
+/* Style dla kontenera formularza */
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding:  15px 15px 15px 30px;    
+    border-radius: 15px;  
+    position: relative;
+    
+}
+
+/* Style dla inputów */
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
+    form {
+        max-width: 90%;
+        padding: 15px; /* Dodane: mniejszy padding dla małych urządzeń */
+
+    }
+    label, input, select {
+        width: 100%; /* Dodane: pełna szerokość dla małych urządzeń */
+    }
+    
+}
+/* Styl paska nawigacyjnego */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between; /* Dodane: umieszcza elementy na obu końcach paska */
+    align-items: center; /* Dodane: wyśrodkowuje elementy w pionie */
+    padding: 10px 20px; /* Dodane: dodałem wewnętrzne marginesy dla estetyki */
+}
+
+/* Styl menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center; /* Dodane: wyśrodkowuje elementy w pionie */
+}
+
+/* Styl pozycji menu */
+.menu li {
+    margin: 0 10px;
+}
+
+/* Styl linków w menu */
+.menu li a {
+    text-decoration: none;
+    color: white;
+   
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Dodane: domyślnie ukrywamy obramowanie */
+    border: 1px solid transparent;
+   
+    /* Skrócony tekst */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Skrócony tekst z "..." na końcu */
+}
+/* Efekt przy najechaniu na link */
+.menu li a:hover {
+    background-color: #555;
+    border-color: black;/* Dodane: zmiana koloru obramowania przy najechaniu */
+}
+/* Responsywność */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu {
+        flex-direction: column;
+    }
+    
+    .menu li {
+        margin: 0;
+    }
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+
+
+/* Ograniczenie szerokości opisu */
+/* Ograniczenie szerokości opisu */
+#opis {
+    width: 100%;
+    max-width: 100%; /* Maksymalna szerokość opisu */
+    margin: 0 auto; /* Wyśrodkowanie */
+    box-sizing: border-box; /* Włączanie paddingu i bordera do szerokości */
+    border-radius: 15px;
+}
+
+/* Responsywny opis */
+@media screen and (max-width: 600px) {
+    #opis {
+        font-size: 14px;
+    }
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.entry img {
+    max-width: 90%;
+    max-height: 550px;
+    border-radius: 15px;
+}
+/* Wyśrodkuj wpisy */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.entry {
+    max-width: 600px; /* Dostosuj szerokość według własnych preferencji */
+    margin: 5px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 16px;
+
+}
+
+/* Responsywność dla małych urządzeń po dodaniu wpisu (białe tło)*/
+@media screen and (max-width: 768px) {
+    .entry {
+        max-width: 90%; /* Zmiana na jednostkę procentową */
+        padding: 10px;
+    }
+    }
+
+/* Styl dla grupy przycisków */
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Styl przycisków wewnątrz grupy */
+/* Styl przycisków wewnątrz grupy */
+.button-group form {
+flex: 1; /* Rozmiar przycisków dostosowuje się do dostępnej przestrzeni */
+margin-left: -18px;
+margin-right: 3px;
+}
+
+/* Styl przycisków */
+.button-group input[type="submit"] {
+background-color: #3498db;
+color: #fff;
+border: none;
+max-width: 200px; /* Dostosuj szerokość według własnych preferencji */
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 15px;
+transition: background-color 0.3s, border-color 0.3s;
+/* Dodane: domyślnie ukrywamy obramowanie */
+border: 1px solid transparent;
+width: 100%; /* Ustaw stałą szerokość przycisków na 100% */
+
+}
+/* Styl przycisków przy najechaniu */
+.button-group input[type="submit"]:hover {
+background-color: #2980b9;
+}
+
+select {
+    width: 87%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+/* Responsywność dla białego tła*/
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    textarea,
+    input[type="file"],
+    select,
+    input[type="submit"] {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+    font-size: 16px;
+    word-wrap: break-word; /* Tekst będzie przełamywany, jeśli jest za długi */
+    border-radius: 15px;
+    text-align: center;
+}
+select {
+
+    width: 97%;
+    padding: 10px;
+}
+
+/* Styl dla tabeli użytkowników */
+table {
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    border: 2px solid #131111;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #c3c1c1;
+}
+td {
+    background-color: #f2f2f2;
+}
+
+/* Responsywność dla tabeli */
+@media screen and (max-width: 768px) {
+    th, td {
+        max-width: 130px; /* Maksymalna szerokość komórek tabeli na ekranie o szerokości 768px i mniejszym */
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 13px;
+    }
+    
+}
+/* Responsywność dla przycisku */
+@media screen and (max-width: 768px) {
+    .button-group input[type="submit"] {
+        
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 11.5px;
+        margin-right: 10px;
+        margin-left: 10px;
+       
+        
+    }
+}
+
+
+
+/* pole tekstu które można zwiększyć czy zmiejszyć */
+#opis {
+    max-height: 300px;
+    max-width: 230px; /* Maksymalna szerokość opisu */
+    margin: 0 auto; /* Wyśrodkowanie */
+    box-sizing: border-box; /* Włączanie paddingu i bordera do szerokości */
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Responsywny opis, szczególnie po dodaniu wpisu */
+@media screen and (max-width: 600px) {
+    #opis {
+        font-size: 16px;
+        max-height: 300px;
+        max-width: 200px; /* Maksymalna szerokość opisu */
+        margin: 0 auto; /* Wyśrodkowanie textarea w kontenerze poziomo */
+        text-align: center;
+    }
+}
+
+/* pole tekstu które można zwiększyć czy zmiejszyć */
+#reason {
+    max-height: 300px;
+    max-width: 230px; /* Maksymalna szerokość opisu */
+    margin: 0 auto; /* Wyśrodkowanie */
+    box-sizing: border-box; /* Włączanie paddingu i bordera do szerokości */
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+/* Responsywny opis, szczególnie po dodaniu wpisu */
+@media screen and (max-width: 600px) {
+    #reason {
+        font-size: 16px;
+        max-height: 300px;
+        max-width: 200px; /* Maksymalna szerokość opisu */
+        margin: 0 auto; /* Wyśrodkowanie textarea w kontenerze poziomo */
+        text-align: center;
+    }
+}
+
+
+.reason {
+    max-height: 300px;
+    max-width: 230px; /* Maksymalna szerokość opisu */
+    margin: 0 auto; /* Wyśrodkowanie */
+    box-sizing: border-box; /* Włączanie paddingu i bordera do szerokości */
+    border-radius: 15px;
+    text-align: center;
+}

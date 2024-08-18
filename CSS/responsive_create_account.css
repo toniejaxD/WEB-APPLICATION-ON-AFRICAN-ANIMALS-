@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('photo_main_page.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+/* białe tło które zawiera pole do uzupełnienia dane logowanie cz zarejestrowanie*/
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+/*odnosi się do nagłówka w białe tło*/
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*białe które dany użytkownik będzie wpisać swoje dane*/
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/*będzie się odnosić pole do uzupełnienia dane*/
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+/* przcisk*/
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Dodane: domyślnie ukrywamy obramowanie */
+    border: 1px solid transparent;
+    
+}
+/* animacja podczas najechanie myszką do przycisku*/
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+/* przycisk reCAPTCHA */
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Dodane: wyśrodkowanie wertykalne */
+    
+}
+
+/* Dodatkowy styl, jeśli chcesz dodać odstęp od przycisku reCAPTCHA do reszty formularza */
+.form-group .g-recaptcha {
+    margin: 0;
+}
+
